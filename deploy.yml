@@ -2,7 +2,7 @@
 - hosts: webservers 
   become: True
   tasks:
-    - name: Deploy petclinic.jar to web server
+    - name: Copy petclinic.jar from the Jenkins build server to Web server
       copy:
         src: target
         dest: /home/ubuntu/
