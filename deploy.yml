@@ -1,0 +1,9 @@
+---
+- hosts: webservers 
+  become: True
+  tasks:
+    - name: Deploy petclinic.jar to web server
+      copy:
+        src: target
+        dest: /home/ubuntu/
+        force: yes
