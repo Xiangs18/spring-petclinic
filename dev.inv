@@ -1,2 +1,5 @@
 [webservers]
 3.239.65.130 ansible_user=ec2-user
+
+[defaults]
+host_key_checking=False
