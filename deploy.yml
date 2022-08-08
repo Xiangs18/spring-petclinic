@@ -11,4 +11,5 @@
     - name: Execute petclinic and display welcome screen
       shell: |
         sudo kill $(sudo lsof -t -i:8080)
-        java -jar target/*.jar
+        nohup java -jar target/*.jar &
+        echo "Success"
